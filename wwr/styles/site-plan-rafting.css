@@ -17,8 +17,8 @@ body {
   --secondary-color: #B0E0E6; /* Powder Blue */
   --accent-color-1: #B0C4DE; /* Light Steel Blue */
   --accent-color-2: #555555; /* Davy's Grey */
-  --heading-font: 'Noto Sans', sans-serif; /* Use Noto Sans for headings */
-  --paragraph-font: Arial, sans-serif; /* Use Arial for paragraphs (adjust as needed) */
+  --heading-font: 'Rock Salt', sans-serif; /* Use Rock Salt for headings */
+  --paragraph-font: 'Noto Sans Gothic', sans-serif; /* Use Noto Sans Gothic for paragraphs */
   --navigation-background: var(--accent-color-1); /* Use accent 1 for navigation bg */
   --navigation-link-color: var(--primary-color); /* Use primary color for navigation links */
   --navigation-link-hover: var(--secondary-color); /* Use secondary color for hover */
@@ -66,6 +66,7 @@ main {
 /* Paragraphs */
 p {
   margin-bottom: 1rem;
+  font-family: var(--paragraph-font); /* Set font-family to paragraph-font variable */
 }
 
 /* Branding Section */
@@ -116,4 +117,3 @@ footer {
 .wireframes img {
   /* Add your desired styles for fonts, colors, etc. */
 }
-```
