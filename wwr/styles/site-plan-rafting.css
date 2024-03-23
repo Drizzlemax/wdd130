@@ -1,1 +1,136 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&family=Rock+Salt&family=Tilt+Warp&display=swap');
+
+/* Body & Text */
+body {
+    background-color: var(--primary-color); /* Use primary color for background */
+    color: var(--accent-color-2); /* Use accent 2 for body text */
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #F0F8FF; /* Alice Blue */
+  --secondary-color: #B0E0E6; /* Powder Blue */
+  --accent-color-1: #B0C4DE; /* Light Steel Blue */
+  --accent-color-2: #555555; /* Davy's Grey */
+  --heading-font: 'Noto Sans', sans-serif; /* Use Noto Sans for headings */
+  --paragraph-font: Arial, sans-serif; /* Use Arial for paragraphs (adjust as needed) */
+  --navigation-background: #B0C4DE; /* Light Steel Blue for navigation bg */
+  --navigation-link-color: #F0F8FF; /* Alice Blue for navigation links */
+  --navigation-link-hover: #B0E0E6; /* Powder Blue for hover */
+  --navigation-hover-background: rgba(176, 196, 222, 0.8); /* Lighter Steel Blue for hover bg */
+}
+
+/* Navigation */
+nav {
+    background-color: var(--navigation-background); /* Light Steel Blue for navigation background */
+    font-size: 1.2rem;
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    color: var(--navigation-link-color); /* Alice Blue for navigation links */
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  nav a:link, nav a:visited {
+    color: var(--navigation-link-color); /* Alice Blue for navigation links */
+  }
+  
+  nav a:hover {
+    color: var(--navigation-hover-link-color); /* Powder Blue for hover link color */
+    background-color: var(--navigation-hover-background); /* Lighter Steel Blue for hover bg */
+  }
+  
+
+/* Headings */
+/* Grouping selector for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font); /* Set font-family to heading-font variable */
+  color: var(--accent-color-1); /* Set color to accent-color-1 */
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Header */
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navigation-background); /* Light Steel Blue for header background */
+}
+
+header h1 {
+  color: var(--primary-color); /* Alice Blue for main heading */
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Paragraphs */
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+    padding: 25px; /* Adjusted padding for paragraphs */
+}
+
+/* Branding Section */
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.branding img {
+  width: 200px; /* Adjust image width as needed */
+}
+
+/* Style Guide Section */
+.style-guide {
+  margin-bottom: 2rem;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--navigation-background); /* Light Steel Blue for navigation background */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: var(--primary-color); /* Alice Blue for navigation links */
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navigation-background); /* Light Steel Blue for footer background */
+  color: var(--primary-color); /* Alice Blue for footer text */
+  padding: 1rem 2rem;
+  text-align: center;
+}

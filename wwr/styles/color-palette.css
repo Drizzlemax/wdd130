@@ -1,0 +1,24 @@
+:root {
+    --alice-blue: #dcedffff;
+    --powder-blue: #94b0daff;
+    --cool-gray: #8f91a2ff;
+    --davys-gray: #505a5bff;
+  
+    /* No need for HSL or RGB definitions as they are redundant with Hex */
+  
+    --gradient-top: linear-gradient(0deg, var(--alice-blue), var(--powder-blue), var(--cool-gray), var(--davys-gray));
+    /* ...other gradients using custom properties */
+  }
+
+  
+  /* CSS HEX */
+--alice-blue: #dcedffff;
+--powder-blue: #94b0daff;
+--cool-gray: #8f91a2ff;
+--davys-gray: #505a5bff;
+
+/* CSS HSL */
+--alice-blue: hsla(211, 100%, 93%, 1);
+--powder-blue: hsla(216, 49%, 72%, 1);
+--cool-gray: hsla(234, 9%, 60%, 1);
+--davys-gray: hsla(185, 6%, 34%, 1);
