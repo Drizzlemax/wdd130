@@ -1,86 +1,86 @@
 /* General Styles */
 body {
-  font-size: 16px;
-  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px; /* Set body font size */
+  font-family: Roboto, Arial, sans-serif; /* Set body font family */
 }
 
 /* Grid and Main */
 .grid {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 2fr 1fr; /* Wider aside, narrower main */
+  display: grid; /* Set grid layout */
+  align-items: center; /* Align grid items vertically to center */
+  grid-template-columns: 2fr 1fr; /* Define grid column structure (wider aside, narrower main) */
 }
 
 main {
-  margin: 1rem; /* Adjust margins and paddings as needed */
-  padding: 1rem; /* Adjust margins and paddings as needed */
+  margin: 1rem; /* Add margin around main content */
+  padding: 1rem; /* Add padding inside main content (adjust as needed) */
 }
 
 /* Aside */
 aside {
   /* Removed width property to allow flexible sizing */
-  position: relative;
+  position: relative; /* Set positioning for potential child elements */
 }
 
 /* Navigation */
 nav {
-  background-color: steelblue;
-  padding: 10pt;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: steelblue; /* Set navigation background color */
+  padding: 10pt; /* Add padding to navigation */
+  display: flex; /* Arrange navigation elements horizontally */
+  justify-content: space-between; /* Align navigation items horizontally */
+  align-items: center; /* Align navigation items vertically */
   /* Removed max-width for full-width navigation */
 }
 
 nav a {
-  color: white;
-  display: block;
-  padding: 20px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  color: white; /* Set link color */
+  display: block; /* Display each link as a block */
+  padding: 20px 30px; /* Add padding to links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Set link font weight */
+  transition: background-color 0.3s ease; /* Add hover effect transition */
 }
 
 nav a:hover {
-  background-color: #333;
+  background-color: #333; /* Set link hover background color */
 }
 
 /* Headings and Text */
 h1 {
-  color: steelblue;
-  border-bottom: 2px solid steelblue;
-  padding-bottom: 5px;
+  color: steelblue; /* Set heading color */
+  border-bottom: 2px solid steelblue; /* Add border to heading */
+  padding-bottom: 5px; /* Add padding below heading */
 }
 
 p {
   padding: 5px 0; /* Adjusted padding */
-  margin: 1rem;
+  margin: 1rem; /* Add margin around paragraphs */
 }
 
 /* Images */
 img {
-  width: 150px; /* Adjust width and other styles as needed */
-  height: auto;
-  border: 1px solid steelblue;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-  margin: 0 0 1rem 1rem;
+  width: 150px; /* Set image width (adjust as needed) */
+  height: auto; /* Maintain image aspect ratio */
+  border: 1px solid steelblue; /* Add border to images */
+  padding: 2px; /* Add padding around images */
+  box-shadow: 0 0 30px gray; /* Add shadow effect to images */
+  margin: 0 0 1rem 1rem; /* Add margin around images */
 }
 
 /* Box Class */
 .box {
-  margin: 1rem;
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 1rem;
-  background-color: #eee;
-  color: #000;
+  margin: 1rem; /* Add margin around elements with .box class */
+  border: 1px solid rgba(0,0,0,.1); /* Add border to elements with .box class */
+  padding: 1rem; /* Add padding to elements with .box class */
+  background-color: #eee; /* Set background color for elements with .box class */
+  color: #000; /* Set text color for elements with .box class */
 }
 
 /* Header and Footer */
 header, .grid, footer {
-  margin: 0 auto; /* Removed max-width for full-width layout */
+  margin: 0 auto; /* Center header, grid, and footer horizontally */
 }
 
 footer {
-  margin-bottom: 2rem; /* Added margin-bottom for footer */
+  margin-bottom: 2rem; /* Add margin below footer */
 }
