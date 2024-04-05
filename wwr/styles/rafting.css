@@ -130,7 +130,7 @@ main {
 }
 .hero img {
   height: 400px;
-  width: 1220px;
+  width: 1150px;
 }
 .hero-text {
   position: absolute; /* Position text on top of image */
@@ -141,6 +141,23 @@ main {
   font-family: var(--hero-text-font); /* Use Roboto font for hero text */
   font-size: 1rem; /* Adjust font size as desired */
   text-align: center; /* Center text alignment */
+}
+
+.adventure-grid {
+  display: flex; /* Enable flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+  justify-content: space-between; /* Distribute items evenly in the container */
+  margin: 1rem 0; /* Add some margin for spacing */
+}
+
+.adventure-grid img {
+  width: 30%; /* Set a width for each image */
+  margin: 0.5rem; /* Add some margin between images */
+}
+
+.adventure-grid p {
+  width: 65%; /* Set a width for the text descriptions */
+  margin-bottom: 0.5rem; /* Add some margin below each description */
 }
 
 
