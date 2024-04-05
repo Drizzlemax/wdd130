@@ -168,5 +168,6 @@ footer {
   border-bottom: 1px solid var(--accent-color-1); /* Example bottom border */
   background-color: var(--accent-color-1); /* Optional background color */
   color: var(--primary-color); /* Optional text color */
+  align-items: flex-end;
 }
 
