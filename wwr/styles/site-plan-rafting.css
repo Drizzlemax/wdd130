@@ -24,6 +24,10 @@ body {
   --navigation-link-hover: var(--secondary-color); /* Use secondary color for hover */
   --navigation-hover-background: rgba(176, 196, 222, 0.8); /* Lighter accent 1 for hover bg */
 }
+body {
+  background-image: url("wdd130\wwr\images\pexels-thilo-lehnert-3413686.jpg");  background-repeat: no-repeat;  background-position: center;  background-size: cover;  opacity: 0.8;  margin: 0;  }
+
+
 
 /* Headings */
 /* Grouping selector for all headings */
