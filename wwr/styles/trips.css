@@ -1,0 +1,172 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #011116; /* Alice Blue */
+  --secondary-color: #394c4e; /* Powder Blue */
+  --accent-color-1: #B0C4DE; /* Light Steel Blue */
+  --accent-color-2: #555555; /* Davy's Grey */
+  --heading-font: 'Rock Salt', sans-serif;
+  --paragraph-font: 'Noto Sans Gothic', sans-serif;
+  --hero-text-font: 'Roboto', sans-serif; /* New font for hero text */
+  --font-size-base: 16px; /* Base font size for readability */
+  --line-height-base: 1.5; /* Base line height for spacing */
+  --hero-background: url("images/hero.jpg") no-repeat center center/cover;
+}
+
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    padding: 1rem;
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Set width to 100% for full width */
+  }
+  header h1 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    margin-bottom: 1px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 150px; /* Adjust logo width */
+    height: auto;
+  }
+  
+  nav {
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+    font-weight: bold; /* Add boldness for emphasis */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust hero image height for better immersion */
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%; /* Stretch image to fill container */
+    object-fit: cover; /* Ensure image covers the entire area */
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    color: #fff; /* Text color over hero image */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background over image */
+  }
+
+  .bounce-button {
+    /* Existing button styles... */
+    animation: bounce 0.5s ease-in-out infinite alternate;  /* Animation properties */
+  }
+  
+   @keyframes bounce {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+  }
+  .trips-nav {
+    /* Existing styles... */
+    padding: 1rem 2rem; /* Padding: 1rem top/bottom, 2rem left/right */
+    border: 2px solid #ddd; /* Border: 2px width, solid style, light gray color */
+    border-radius: 5px; /* Add rounded corners for a cooler look */
+  }
+  
+
+  /* Additional styles for table */
+.trip-comparison {
+    margin-bottom: 2rem; /* Add space below comparison table */
+  }
+  
+  .trip-comparison table {
+    width: 100%; /* Make table full width for better responsiveness */
+    border-collapse: collapse; /* Collapse table borders for cleaner look */
+  }
+  
+  .trip-comparison__header,
+  .trip-comparison tbody tr { /* Target header and table rows */
+    border-bottom: 1px solid #ddd; /* Add thin border to separate rows */
+  }
+  
+  .trip-comparison th,
+  .trip-comparison td { /* Style table cells */
+    padding: 1rem; /* Add padding for better readability */
+    text-align: left; /* Align content to the left */
+  }
+  
+  
+  /* Footer */
+  /* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* This line centers content horizontally */
+    padding: 2rem;
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Centers content within footer-content */
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0; /* Remove bottom margin for better spacing */
+  }
+  
+  .footer a {
+    color: #fff; /* Light color for links in footer */
+    text-decoration: none;
+  }
+  
+  /* Social Links Centering */
+  .sociallinks {
+    display: flex;
+    justify-content: center; /* Centers social icons horizontally */
+  }
+  
+  .sociallinks img {
+    margin-right: 1rem; /* Add space between icons */
+    justify-content: center;
+  }
+  
