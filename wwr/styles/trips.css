@@ -124,7 +124,9 @@ body {
     /* Existing styles... */
     padding: 1rem 2rem; /* Padding: 1rem top/bottom, 2rem left/right */
     border: 2px solid #ddd; /* Border: 2px width, solid style, light gray color */
-    border-radius: 5px; /* Add rounded corners for a cooler look */
+    border-radius: 3rem; /* Add rounded corners for a cooler look */
+
+    
   }
   
 
