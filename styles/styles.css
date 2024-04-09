@@ -32,6 +32,13 @@ aside {
   position: relative; /* Set positioning for potential child elements */
 }
 
+.block {
+  border: 3px;
+  margin: 0rem;
+  background-color: #eee;
+  padding: -3px;
+}
+
 /* Navigation */
 nav {
   background-color: steelblue; /* Set navigation background color */
@@ -93,4 +100,6 @@ header, .grid, footer {
 
 footer {
   margin-bottom: 2rem; /* Add margin below footer */
+  background-color: steelblue;
+  width: 200%;
 }
