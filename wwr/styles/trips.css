@@ -133,6 +133,7 @@ body {
   /* Additional styles for table */
 .trip-comparison {
     margin-bottom: 2rem; /* Add space below comparison table */
+    border-radius: 3rem;
   }
   
   .trip-comparison table {
