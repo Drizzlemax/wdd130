@@ -1,0 +1,140 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #011116; /* Alice Blue */
+  --secondary-color: #394c4e; /* Powder Blue */
+  --accent-color-1: #B0C4DE; /* Light Steel Blue */
+  --accent-color-2: #555555; /* Davy's Grey */
+  --heading-font: 'Rock Salt', sans-serif;
+  --paragraph-font: 'Noto Sans Gothic', sans-serif;
+  --hero-text-font: 'Roboto', sans-serif; /* New font for hero text */
+  --font-size-base: 16px; /* Base font size for readability */
+  --line-height-base: 1.5; /* Base line height for spacing */
+  --hero-background: url("images/hero.jpg") no-repeat center center/cover;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Ensures consistent box model */
+  margin: 0; /* Reset default margins */
+  padding: 0; /* Reset default padding */
+}
+
+body {
+  font-family: var(--paragraph-font);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--secondary-color);
+  margin: 0; /* Reset default margin for body */
+  font-weight: 300; /* Add a slight weight for a more refined look */
+}
+
+/* Media Queries for Responsiveness (Basic Example) */
+@media (max-width: 768px) {
+  header nav {
+    display: flex; /* Stack navigation links vertically on small screens */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  header nav li {
+    margin-right: 0; /* Remove margin between navigation links */
+    margin-bottom: 1rem; /* Add space between links */
+  }
+
+  .about-us,
+  .history,
+  .adventure-awaits {
+    flex-direction: column; /* Stack content vertically on small screens */
+    align-items: center;
+  }
+
+  .Meet-the-team {
+    width: 100%; /* Images take full width on small screens */
+    margin-right: 1;
+    margin-bottom: 0rem;
+    align-items: center;
+  }
+}
+
+/* Header Styling */
+header {
+  padding: 1rem;
+  background-color: var(--accent-color-1);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Set width to 100% for full width */
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+header nav a {
+  color: inherit; /* Inherit header text content */
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+  font-weight: bold; /* Set link font weight */
+  transition: background-color 0.3s ease; /* Add hover effect transition */
+}
+
+
+header nav a:hover {
+  color: var(--secondary-color); /* Use secondary color for hover */
+}
+
+/* Main Content Styling */
+main {
+  padding: 2rem; /* Add some padding for content */
+}
+
+.background-image {
+    background-image: url("images/pexels-artūras-kokorevas-14683071"); /* Replace with the actual path to your image */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-position: center;  /* Center the image horizontally and vertically */
+    background-size: cover;      /* Scale the image to cover the entire viewport */
+    height: 100vh;  /* Optional: Set the height to 100vh (viewport height) for full coverage */
+  }
+  
+  
+
+.Send-message-us {
+    display: block;
+    padding: 1rem;
+    align-items: flex-end;
+
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Set width to 100% for full width */
+  }
