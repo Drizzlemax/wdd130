@@ -1,0 +1,67 @@
+<!-- booking-form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="styles/booking.css">
+</head>
+<body>
+    <h2>Booking Form</h2>
+    <form action="process_booking.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="trip">Select Trip:</label>
+        <select id="trip" name="trip" required>
+            <option value="Family-Friendly Rafting">Family Package</option>
+            <option value="Solo River Experience">Solo River Experience</option>
+            <option value="Berg River Explorers">Berg River Explorers</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Include this div after the form -->
+<div class="success-message" style="display: none;">
+    <img src="images/green-check-mark-icon-transparent-background-3.png" alt="Success" style="width: 32px;">
+    <p>Submitted!!!!!!</p>
+
+<script>
+    // Select the form element
+const form = document.querySelector('form');
+
+// Select the success message element
+const successMessage = document.querySelector('.success-message');
+
+// Add an event listener to the form for form submission
+form.addEventListener('submit', function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    
+    // Show the success message
+    successMessage.style.display = 'block';
+    
+    // Optionally, you can reset the form after submission
+    form.reset();
+});
+
+</script>
+</div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+          <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook-svgrepo-com.svg" alt="Facebook" style="width: 32px;"></a>
+            <a href="https://twitter.com"><img src="images/twitter-svgrepo-com.svg" alt="Twitter" style="width: 32px;"></a>
+            <a href="https://instagram.com"><img src="images/instagram-svgrepo-com.svg" alt="Instagram" style="width: 32px;"></a>
+          </nav>
+        </div>
+        <p class="copyright">©️2024 White Water Wanderers. All Rights Reserved</p>
+        <a href="images/trips-wireframe.jpg">See Trips Page Wireframe</a>
+    </footer>
+      
+      
+</body>
+</html>

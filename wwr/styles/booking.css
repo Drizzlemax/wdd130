@@ -1,0 +1,138 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #011116; /* Alice Blue */
+  --secondary-color: #394c4e; /* Powder Blue */
+  --accent-color-1: #B0C4DE; /* Light Steel Blue */
+  --accent-color-2: #555555; /* Davy's Grey */
+  --heading-font: 'Rock Salt', sans-serif;
+  --paragraph-font: 'Noto Sans Gothic', sans-serif;
+  --hero-text-font: 'Roboto', sans-serif; /* New font for hero text */
+  --font-size-base: 16px; /* Base font size for readability */
+  --line-height-base: 1.5; /* Base line height for spacing */
+  --hero-background: url("images/hero.jpg") no-repeat center center/cover;
+}
+
+/* styles/booking-form.css */
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color); /* Use secondary color as background */
+    color: var(--primary-color); /* Use primary color for text */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--accent-color-1); /* Accent color 1 for form background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 35px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--accent-color-2); /* Use accent color 2 for button background */
+    color: #fff;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block; /* Center button */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #333; /* Darken button color on hover */
+}
+
+.success-message {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Adjust margin top for spacing */
+}
+
+.success-message img {
+    width: 50px; /* Adjust width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the image and the text */
+}
+
+
+/* Adjust form styles for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 1rem;
+    }
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* This line centers content horizontally */
+    padding: 2rem;
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Centers content within footer-content */
+    align-items: center;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0; /* Remove bottom margin for better spacing */
+}
+
+.footer a {
+    color: #fff; /* Light color for links in footer */
+    text-decoration: none;
+}
+
+/* Social Links Centering */
+.sociallinks {
+    display: flex;
+    justify-content: center; /* Centers social icons horizontally */
+    align-items: center;
+}
+
+.sociallinks img {
+    margin-right: -30px; /* Add space between icons */
+    margin-left: 300px;
+    
+}
